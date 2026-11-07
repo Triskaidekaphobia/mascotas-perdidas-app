@@ -21,7 +21,9 @@ jobs:
           java-version: '17'
 
       - name: Preparar Android
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v
+        with:
+         packages: 'platform-tools'
 
       - name: Instalar SDK
         run: sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
