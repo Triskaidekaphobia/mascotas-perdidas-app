@@ -35,7 +35,7 @@ jobs:
 
       - name: Extraer aplicación
         run: |
-          unzip -q MascotasPerdidasAndroid-compilar-APK.zip -d /tmp/mascotas
+          unzip -q mascotas-perdidas-proyecto.zip -d /tmp/mascotas
           test -f /tmp/mascotas/MascotasPerdidasAndroid/settings.gradle
 
       - name: Compilar APK
